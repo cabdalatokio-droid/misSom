@@ -1,0 +1,103 @@
+@use "../../variables.scss" as *;
+
+.countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.digit_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.digit {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.text {
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* ---------- Desktop ---------- */
+@media (max-width: $disktopBreakpoints) {
+  .digit {
+    font-size: 4rem;
+  }
+
+  .text {
+    font-size: 1.1rem;
+  }
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width: $tabletBreakpoints) {
+  .countdown {
+    padding: 1.5rem;
+
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .time {
+    gap: 1.5rem;
+  }
+
+  .digit {
+    font-size: 3.2rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: $mobileBreakpoints) {
+  .countdown {
+    padding: 1rem;
+
+    h1 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .time {
+    gap: 1rem;
+  }
+
+  .digit {
+    font-size: 2.3rem;
+  }
+
+  .text {
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+  }
+}
