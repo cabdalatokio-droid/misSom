@@ -24,7 +24,7 @@ function Timer() {
 		<div className={styles.countdown}>
 			{/* they use millisecond so pass your date as milliseconds and you can get the formula below */}
 			{/* 1000 milliseconds * 60 seconds * 60 minutes * 24 how many Days */}
-			<Countdown date={Date.now() + 6739200000} renderer={renderer} />,
+			<Countdown date={Date.now() + 6739200000} renderer={renderer} />
 		</div>
 	);
 }
